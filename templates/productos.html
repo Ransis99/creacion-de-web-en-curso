@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: hsl(182, 80%, 10%);
+            z-index: -1;
+        }
+
+        .container {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0%;
+        }
+
+        .container2 {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0%;
+        }
+
+        .presentacion2{
+            position: absolute;
+            top: 150%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0%;
+        }
+
+        .presentacion3{
+            position: absolute;
+            top: 250%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0%;
+        }
+
+        .presentacion4{
+            position: absolute;
+            top: 350%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0%;
+        }
+
+        .presentacion5{
+            position: absolute;
+            top: 450%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0%;
+        }
+
+        .presentacion6{
+            position: absolute;
+            top: 550%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            margin-bottom: 0%;
+        }
+
+        .button_slide {
+            text-align: center;
+            color: #e5e9eb;
+            border: 2px solid rgb(234, 240, 243);
+            border-radius: 0px;
+            padding: 18px 36px;
+            display: inline-block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif font-size;
+            letter-spacing: 1px;
+            cursor: pointer;
+            box-shadow: inset 0 0 0 0 #f4f2f3;
+            -webkit-transition: ease-out 0.4s;
+            -moz-transition: ease-out 0.4s;
+            transition: ease-out 0.4s;
+        }
+
+        .slide_right:hover {
+            box-shadow: inset 400px 0 0 0 #169eec;
+            
+        }
+
+        /* Estilos para el header */
+        header {
+            text-align: center;
+            background-color: hsl(182, 80%, 10%);
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+        }
+        .whats{
+            float: left;
+        }
+        .logo{
+            float: right;
+            margin: -55px 110px 0 0;
+        }
+
+        /* Estilos para el título dentro del header */
+        header h1 {
+            background-color: hsl (182, 80%, 10%);
+            text-align: center;
+            margin: auto;
+            font-size: 24px;
+        }
+        
+            
+    </style>
+</head>
+
+<body>
+    <!-- cabeza de pagina -->
+    <header>
+        <div> <h1> OSTEOTRONIK </h1> <br> 
+           <div class="whats"> <img src="/static/img/WhatsApp_icon.png" width=50px>  55 60 75 99 32  <img src="/static/img/correo.png" width="50px"> Ricardo_osteotronik@hotmail.com &nbsp; <img src="/static/img/github.png" width="50px"> github.com/ransis99</div>  
+            <h7 class="button_slide slide_right" > Productos</h7> &nbsp;&nbsp;&nbsp;
+            <h7 class="button_slide slide_right" > Acerca De:</h7>&nbsp;&nbsp;&nbsp;&nbsp;
+            <h7 class="button_slide slide_right" > Contacto </h7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img class="logo" src="/static/img/logo.jpg" width="120px" alt="Logo">
+            
+        </div>
+        
+    </header>
+
+
+    <!-- separacion de cabeza con demas codigo HTML -->
+
+    </nav>
+    <div id="particles-js"></div>
+    <div class="container"> </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#ffffff' },
+                shape: { type: 'circle', stroke: { width: 0, color: '#000000' }, polygon: { nb_sides: 5 } },
+                opacity: { value: 0.5, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } },
+                size: { value: 3, random: true, anim: { enable: true, speed: 2, size_min: 0.1, sync: false } },
+                line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 3, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 400, line_linked: { opacity: 1 } },
+                    bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                    repulse: { distance: 200, duration: 0.4 },
+                    push: { particles_nb: 4 },
+                    remove: { particles_nb: 2 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+
+    <div class="container"> <br> <br> <br> <br>
+        <h1 id="product"> Conoce Nuestros Productos</h1>
+        <h2> Material De Osteosintesís</h2>
+        <a href="/inicio">
+             </a>
+    </div>
+
+    
+    <div class="container2"> 
+        <img src="/static/img/001.jpg" width="1600px" alt="presentacion"> <br>
+        <img class="presentacion2" src="/static/img/presentacion2.jpg" width="1500px" alt="presentacion2">
+        <img class="presentacion3" src="/static/img/presentacion/presentacion3.jpg" width="1500px" alt="presentacion2">
+        <img class="presentacion4" src="/static/img/presentacion/presentacion4.jpg" width="1500px" alt="presentacion3">
+        <img class="presentacion5" src="/static/img/presentacion/presentacion5.jpg" width="1500px" alt="presentacion5" >
+        <img class="presentacion6" src="/static/img/presentacion6.jpg" width="1500px" alt="presentacion6" >
+    </div>
+
+
+    
+</body>
+
+</html>
